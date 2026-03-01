@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+    body {
+      background-color:	#ffc4ec; 
+      font-size: 3em;
+      font-family: 'Garamond', serif;
+      text-align: center;
+      margin-top: 30px;
+      justify-content: center;
+    }
+    .container {
+      display: inline-block;
+      padding: 25px;
+      background-color: #FFE6E6;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-family: 'Garamond', serif;
+      font-size: 40px;
+      color: #6f1d92;
+      margin-bottom: 20px;
+    }
+    input {
+      margin: 10px;
+      padding: 10px;
+      width: 100px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Garamond', serif;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 25px;
+      font-family: 'Garamond', serif;
+      font-size: 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #7f3bac;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    #username, #password {
+        font-size: 28px;
+        font-weight: bolder;
+        color: #812e89;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <!-- Input area -->
+        <h1>Create Your Account</h1> 
+    <div class="mb-3">
+        <input type="text" id="username" placeholder="user"/><br>
+        <input type="text" id="password" placeholder="pass"/><br>
+    </div>
+
+    <button type="Sign Up" py-click="validate_signin">Sign In</button>
+    </div>
+  <!-- Display Output -->
+    <div id="output"></div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
