@@ -15,7 +15,7 @@ def validate_signin(e):
 
     #checks if entered username is atleast 7 characters long
     if username_length < 7:
-        display(f"Username is short. Add atleast {7 - username_length} more characters to proceed.")
+        errors.append(f"Username is short. Add atleast {7 - username_length} more characters to proceed.")
    
     #Retrieve the entered password from the HTML input field
     password = document.getElementById("password").value
@@ -39,5 +39,6 @@ def validate_signin(e):
     else: 
         output_div.innerHTML = "Account created successfully!"
         
+
 
 
