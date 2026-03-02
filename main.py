@@ -25,12 +25,12 @@ def validate_signin(e):
     #Validate password length (must be at least 10 characters)
     if password_length < 10:
         errors.append(f"Password is short. Add at least {10 - len(password)} more characters to proceed.")
-        #Validate if password contains at least one number
-        if password.isalpha():
-            errors.append("Password must contain at least 1 number.")
-            #Validate if password contains at least one letter
-            if password.isdigit():
-                errors.append("Password must contain at least 1 letter.") 
+    #Validate if password contains at least one number
+    if password.isalpha():
+        errors.append("Password must contain at least 1 number.")
+    #Validate if password contains at least one letter
+    if password.isdigit():
+        errors.append("Password must contain at least 1 letter.") 
  
 # Display Results
     
@@ -39,4 +39,5 @@ def validate_signin(e):
     else: 
         output_div.innerHTML = "Account created successfully!"
         
+
 
